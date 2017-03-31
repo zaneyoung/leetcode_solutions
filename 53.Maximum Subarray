@@ -22,7 +22,7 @@ maxSum(nums[0])是确定的。
 算法：
 public int maxSubArray(int[] nums) {
     int length = nums.length;
-    int[] dp = new int[length];
+    int[] dp = new int[length]; //dp[i]为nums[0:i]的最大和
     dp[0] = nums[0];
     int max = dp[0];
     for(int i=1;i<length;i++) {
